@@ -1,10 +1,20 @@
 import React from 'react';
+import Tabs from './components/Tabs';
+import AddressBar from './components/AddressBar';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello</h1>
+    <div className="app">
+      <div className="browser">
+        <Tabs />
+
+        <AddressBar />
+
+        <div className="viewport">
+          <>New Tab Page</>
+        </div>
+      </div>
     </div>
   );
 }
